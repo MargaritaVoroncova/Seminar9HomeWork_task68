@@ -21,7 +21,7 @@ int AkkermanFunction(int m, int n)
     {
         return AkkermanFunction(m - 1, AkkermanFunction(m, n - 1));
     }
-    else return AkkermanFunction(m, n);//тупо переписываем условия из Википедии
+    else return AkkermanFunction(m, n);
 }
 
-Console.WriteLine(AkkermanFunction(m, n));//в результате сломала всю голову, так как в примере ошибка. Должно получиться 9, а не 29.
+Console.WriteLine(AkkermanFunction(m, n));
